@@ -7,7 +7,7 @@ export default new Vuex.Store({
   state: {
     dictionaries: [
       {
-        id: 1,
+        id: Date.now(),
         rules: [
           {
             from: 'ph',
@@ -22,23 +22,6 @@ export default new Vuex.Store({
             to: 'Physics'
           }
         ]
-      },
-      {
-        id: 2,
-        rules: [
-          {
-            from: 'a',
-            to: 'Biology'
-          },
-          {
-            from: 'b',
-            to: 'Chemistry'
-          },
-          {
-            from: 'c',
-            to: 'Physics'
-          }
-        ]
       }
     ]
   },
@@ -49,6 +32,9 @@ export default new Vuex.Store({
       if (idx > -1) {
         state.dictionaries.splice(idx, 1)
       }
+    },
+    createDictionary (state, dictionary) {
+      state.dictionaries.push(dictionary)
     }
   },
   actions: {

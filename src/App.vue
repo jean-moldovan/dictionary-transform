@@ -50,7 +50,12 @@ button {
   text-align: right;
 }
 
+.text-negative {
+  color: var(--color-negative);
+}
+
 .app-content {
   padding: 20px;
 }
+
 </style>
