@@ -51,10 +51,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.dictionary-list-page {
-  padding: 20px;
-}
-
 .dictionary-create-btn {
   margin-bottom: 20px;
 }

@@ -1,5 +1,9 @@
 <template>
   <div>
+    <h3>
+      Create Dictionary
+    </h3>
+
     create
   </div>
 </template>

@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <app-header />
-    <router-view />
+
+    <div class="app-content">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -45,5 +48,9 @@ button {
 
 .text-right {
   text-align: right;
+}
+
+.app-content {
+  padding: 20px;
 }
 </style>
